@@ -282,8 +282,29 @@ input[type=submit] {
     padding: 2rem 3%;
   }
 }
-@media (max-width: 1200px){
-  html {
-    font-size: 55%;
+@media (max-width: 768px){
+  #menu-icon{
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #0cdbdb;
+    display: none;
+  }
+  .navbar .active{
+    display: block;
+    
+  }
+  .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .Home{
+    flex-direction: column;
   }
 }
