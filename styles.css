@@ -74,11 +74,19 @@ section{
 .home-img{
   /* padding-left: 30rem; */
 }
-.home-img img{
+/* .home-img img{
   width: 34vw;
   height: 60vh;
   margin-left: 6rem;
+} */
+
+.home-img img{
+  width: 600px;
+  height: 500px;
+  margin-left: 6rem;
 }
+
+
 .home-content p{
   font-size: 1.6rem;
 }
@@ -304,7 +312,19 @@ input[type=submit] {
     font-size: 2rem;
     margin: 3rem 0;
   }
-  .Home{
+  .Home, .About{
     flex-direction: column;
   }
+  .Achievements{
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+  }
+  
 }
+@media (max-width: 600px){
+  .home-img{
+    display: none;
+  }
+}
+
+
